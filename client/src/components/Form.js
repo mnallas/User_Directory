@@ -8,10 +8,13 @@ const Form = () => {
         <label htmlFor="exampleInputEmail1">Search Employee</label>
         <input
           type="email"
-          className="form-control"
+          className="form-control mb-2"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
         />
+        <button className="btn btn-primary" type="submit">
+          Submit
+        </button>
       </div>
     </form>
   );

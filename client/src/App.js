@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import Form from "./components/Form.js";
+import Card from "./components/Card";
 import Table from "./components/Table";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <Form />
+      <Card />
       <Table employee={employee} />
     </div>
   );
