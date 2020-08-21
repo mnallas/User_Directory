@@ -6,24 +6,15 @@ const Table = (props) => {
       <table className="table">
         <thead className="thead-dark">
           <tr>
+            <th scope="col">Picture</th>
             <th scope="col">First</th>
             <th scope="col">Last</th>
-            <th scope="col">Gender</th>
+            <th scope="col">Age</th>
             <th scope="col">Email</th>
             <th scope="col">Phone #</th>
           </tr>
         </thead>
-        <tbody>
-          {props.employee.map((element, index) => (
-            <tr key={index}>
-              <td>{element.name.first}</td>
-              <td>{element.name.last}</td>
-              <td>{element.gender}</td>
-              <td>{element.email}</td>
-              <td>{element.cell}</td>
-            </tr>
-          ))}
-        </tbody>
+        {props.children}
       </table>
     </div>
   );

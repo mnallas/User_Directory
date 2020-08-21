@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Form = () => {
-  const [employeeState, setEmployee] = useState("");
+const Form = (props) => {
   return (
     <form className="container mb-5">
       <div className="form-group">
         <label htmlFor="exampleInputEmail1">Search Employee</label>
         <input
-          type="email"
+          onChange={props.input}
           className="form-control mb-2"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
         />
-        <button className="btn btn-primary" type="submit">
-          Submit
-        </button>
       </div>
     </form>
   );
